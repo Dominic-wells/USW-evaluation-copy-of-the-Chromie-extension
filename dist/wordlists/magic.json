@@ -1,0 +1,801 @@
+{
+  "theme": "magic",
+  "words": {
+    "characters": [
+      { "word": "wizard", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "witch", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "fairy", "canRun": false, "canHide": true, "size": "tiny" },
+      { "word": "dragon", "canRun": true, "canHide": false, "size": "huge" },
+      { "word": "elf", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "knight", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "sorcerer", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "enchanter",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "warlock", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "necromancer",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      {
+        "word": "alchemist",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "oracle", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "druid", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "shaman", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "paladin", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "mage", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "griffin", "canRun": true, "canHide": false, "size": "large" },
+      { "word": "phoenix", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "unicorn", "canRun": true, "canHide": true, "size": "large" },
+      { "word": "centaur", "canRun": true, "canHide": false, "size": "large" },
+      { "word": "goblin", "canRun": true, "canHide": true, "size": "small" },
+      { "word": "troll", "canRun": true, "canHide": false, "size": "large" },
+      { "word": "dwarf", "canRun": true, "canHide": true, "size": "small" },
+      { "word": "giant", "canRun": true, "canHide": false, "size": "huge" },
+      { "word": "sprite", "canRun": false, "canHide": true, "size": "tiny" },
+      { "word": "ghoul", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "phantom", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "specter", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "mystic", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "apprentice",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      }
+    ],
+    "places": [
+      { "word": "castle", "size": "large", "isHabitable": true },
+      { "word": "tower", "size": "large", "isHabitable": true },
+      { "word": "forest", "size": "huge", "isHabitable": true },
+      { "word": "cave", "size": "large", "isHabitable": true },
+      { "word": "tree", "size": "large", "isHabitable": true },
+      { "word": "garden", "size": "medium", "isHabitable": true },
+      { "word": "dungeon", "size": "large", "isHabitable": true },
+      { "word": "temple", "size": "large", "isHabitable": true },
+      { "word": "shrine", "size": "medium", "isHabitable": true },
+      { "word": "crypt", "size": "medium", "isHabitable": true },
+      { "word": "sanctuary", "size": "large", "isHabitable": true },
+      { "word": "library", "size": "large", "isHabitable": true },
+      { "word": "laboratory", "size": "medium", "isHabitable": true },
+      { "word": "academy", "size": "large", "isHabitable": true },
+      { "word": "cathedral", "size": "large", "isHabitable": true },
+      { "word": "grotto", "size": "medium", "isHabitable": true },
+      { "word": "swamp", "size": "large", "isHabitable": true },
+      { "word": "mountain", "size": "huge", "isHabitable": true },
+      { "word": "valley", "size": "large", "isHabitable": true },
+      { "word": "village", "size": "large", "isHabitable": true },
+      { "word": "ruins", "size": "large", "isHabitable": true },
+      { "word": "portal", "size": "small", "isHabitable": false },
+      { "word": "vortex", "size": "large", "isHabitable": false },
+      { "word": "dimension", "size": "huge", "isHabitable": true },
+      { "word": "realm", "size": "huge", "isHabitable": true },
+      { "word": "void", "size": "huge", "isHabitable": false },
+      { "word": "abyss", "size": "huge", "isHabitable": false },
+      { "word": "nexus", "size": "medium", "isHabitable": false },
+      { "word": "labyrinth", "size": "large", "isHabitable": true },
+      { "word": "maze", "size": "large", "isHabitable": true },
+      { "word": "island", "size": "large", "isHabitable": true },
+      { "word": "bridge", "size": "medium", "isHabitable": false },
+      { "word": "citadel", "size": "large", "isHabitable": true },
+      { "word": "wasteland", "size": "huge", "isHabitable": true },
+      { "word": "oasis", "size": "medium", "isHabitable": true }
+    ],
+    "objects": [
+      {
+        "word": "wand",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "book",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      { "word": "ring", "canFly": false, "canBeCarried": true, "size": "tiny" },
+      { "word": "hat", "canFly": false, "canBeCarried": true, "size": "small" },
+      {
+        "word": "broom",
+        "canFly": true,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "crown",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "staff",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      { "word": "orb", "canFly": false, "canBeCarried": true, "size": "small" },
+      {
+        "word": "potion",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "scroll",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "crystal",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "amulet",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "pendant",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "talisman",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "relic",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "grimoire",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "tome",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "cauldron",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "chalice",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "mirror",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "lamp",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "cloak",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "robe",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "sword",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "dagger",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "shield",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "helm",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "brew",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "elixir",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      { "word": "herb", "canFly": false, "canBeCarried": true, "size": "tiny" },
+      {
+        "word": "feather",
+        "canFly": true,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "bone",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "skull",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "candle",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "lantern",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "artifact",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "brazier",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "charm",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "stone",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      { "word": "key", "canFly": false, "canBeCarried": true, "size": "tiny" }
+    ],
+    "actions": [
+      {
+        "word": "flies",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "dragon",
+          "phoenix",
+          "sprite"
+        ]
+      },
+      {
+        "word": "runs",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "elf",
+          "knight",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "paladin",
+          "mage",
+          "unicorn",
+          "centaur",
+          "goblin",
+          "troll",
+          "dwarf",
+          "giant",
+          "ghoul",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "jumps",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "elf",
+          "knight",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "paladin",
+          "mage",
+          "unicorn",
+          "centaur",
+          "goblin",
+          "troll",
+          "dwarf",
+          "ghoul",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "hides",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "elf",
+          "knight",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "paladin",
+          "mage",
+          "phoenix",
+          "goblin",
+          "dwarf",
+          "sprite",
+          "ghoul",
+          "phantom",
+          "specter",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "finds",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "dragon",
+          "elf",
+          "knight",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "paladin",
+          "mage",
+          "griffin",
+          "phoenix",
+          "unicorn",
+          "centaur",
+          "goblin",
+          "troll",
+          "dwarf",
+          "giant",
+          "sprite",
+          "ghoul",
+          "phantom",
+          "specter",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "walks",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "elf",
+          "knight",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "paladin",
+          "mage",
+          "unicorn",
+          "centaur",
+          "goblin",
+          "troll",
+          "dwarf",
+          "giant",
+          "ghoul",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "enchants",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "elf",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "mage",
+          "sprite",
+          "mystic"
+        ]
+      },
+      {
+        "word": "casts",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "druid",
+          "shaman",
+          "paladin",
+          "mage",
+          "sprite",
+          "mystic"
+        ]
+      },
+      {
+        "word": "summons",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "oracle",
+          "druid",
+          "shaman",
+          "mage",
+          "mystic"
+        ]
+      },
+      {
+        "word": "transforms",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "dragon",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "druid",
+          "shaman",
+          "mage",
+          "phoenix",
+          "sprite",
+          "phantom",
+          "specter",
+          "mystic"
+        ]
+      },
+      {
+        "word": "studies",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "elf",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "mage",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "brews",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "sorcerer",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "druid",
+          "shaman",
+          "mage",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "protects",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "dragon",
+          "elf",
+          "knight",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "paladin",
+          "mage",
+          "griffin",
+          "unicorn",
+          "centaur",
+          "troll",
+          "giant",
+          "mystic"
+        ]
+      },
+      {
+        "word": "attacks",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "dragon",
+          "elf",
+          "knight",
+          "sorcerer",
+          "warlock",
+          "necromancer",
+          "paladin",
+          "mage",
+          "griffin",
+          "unicorn",
+          "centaur",
+          "goblin",
+          "troll",
+          "dwarf",
+          "giant",
+          "ghoul",
+          "mystic"
+        ]
+      },
+      {
+        "word": "chants",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "elf",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "oracle",
+          "druid",
+          "shaman",
+          "mage",
+          "sprite",
+          "mystic",
+          "apprentice"
+        ]
+      },
+      {
+        "word": "teleports",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "mage",
+          "sprite",
+          "phantom",
+          "specter",
+          "mystic"
+        ]
+      },
+      {
+        "word": "meditates",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "elf",
+          "sorcerer",
+          "oracle",
+          "druid",
+          "shaman",
+          "mage",
+          "mystic"
+        ]
+      },
+      {
+        "word": "conjures",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "mage",
+          "sprite",
+          "mystic"
+        ]
+      },
+      {
+        "word": "guards",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "dragon",
+          "elf",
+          "knight",
+          "sorcerer",
+          "paladin",
+          "griffin",
+          "unicorn",
+          "centaur",
+          "goblin",
+          "troll",
+          "dwarf",
+          "giant",
+          "sentinel",
+          "mystic"
+        ]
+      },
+      {
+        "word": "discovers",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "wizard",
+          "witch",
+          "fairy",
+          "dragon",
+          "elf",
+          "knight",
+          "sorcerer",
+          "enchanter",
+          "warlock",
+          "necromancer",
+          "alchemist",
+          "oracle",
+          "druid",
+          "shaman",
+          "paladin",
+          "mage",
+          "griffin",
+          "unicorn",
+          "centaur",
+          "goblin",
+          "dwarf",
+          "sprite",
+          "mystic",
+          "apprentice"
+        ]
+      }
+    ],
+    "colors": [
+      { "word": "red", "brightness": "medium" },
+      { "word": "blue", "brightness": "medium" },
+      { "word": "green", "brightness": "medium" },
+      { "word": "gold", "brightness": "bright" },
+      { "word": "pink", "brightness": "medium" },
+      { "word": "purple", "brightness": "medium" },
+      { "word": "silver", "brightness": "bright" },
+      { "word": "bronze", "brightness": "medium" },
+      { "word": "copper", "brightness": "medium" },
+      { "word": "black", "brightness": "dim" },
+      { "word": "white", "brightness": "bright" },
+      { "word": "crimson", "brightness": "medium" },
+      { "word": "azure", "brightness": "medium" },
+      { "word": "emerald", "brightness": "bright" },
+      { "word": "sapphire", "brightness": "bright" },
+      { "word": "ruby", "brightness": "bright" },
+      { "word": "amethyst", "brightness": "medium" },
+      { "word": "jade", "brightness": "medium" },
+      { "word": "amber", "brightness": "medium" },
+      { "word": "obsidian", "brightness": "dim" },
+      { "word": "ivory", "brightness": "bright" },
+      { "word": "crystal", "brightness": "bright" },
+      { "word": "ebony", "brightness": "dim" },
+      { "word": "opal", "brightness": "bright" },
+      { "word": "turquoise", "brightness": "medium" },
+      { "word": "indigo", "brightness": "dim" },
+      { "word": "violet", "brightness": "medium" },
+      { "word": "lavender", "brightness": "medium" },
+      { "word": "maroon", "brightness": "dim" },
+      { "word": "teal", "brightness": "medium" },
+      { "word": "onyx", "brightness": "dim" },
+      { "word": "pearlescent", "brightness": "bright" },
+      { "word": "glowing", "brightness": "bright" },
+      { "word": "luminous", "brightness": "bright" },
+      { "word": "shimmering", "brightness": "bright" },
+      { "word": "spectral", "brightness": "medium" },
+      { "word": "ghostly", "brightness": "dim" },
+      { "word": "ethereal", "brightness": "bright" },
+      { "word": "prismatic", "brightness": "bright" },
+      { "word": "mystical", "brightness": "medium" }
+    ]
+  }
+}

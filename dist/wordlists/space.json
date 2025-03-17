@@ -1,0 +1,990 @@
+{
+  "theme": "space",
+  "words": {
+    "characters": [
+      {
+        "word": "astronaut",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      {
+        "word": "cosmonaut",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "robot", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "alien", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "pilot", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "commander",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "explorer", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "scientist",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "engineer", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "navigator",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "spaceman", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "traveler", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "voyager", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "pioneer", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "cadet", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "android", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "cyborg", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "drone", "canRun": false, "canHide": true, "size": "small" },
+      { "word": "captain", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "sentinel", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "guardian", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "technician",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "colonist", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "star", "canRun": false, "canHide": false, "size": "huge" },
+      { "word": "comet", "canRun": false, "canHide": false, "size": "large" },
+      { "word": "humanoid", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "martian", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "lunarian", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "hologram",
+        "canRun": false,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "being", "canRun": true, "canHide": true, "size": "medium" }
+    ],
+    "places": [
+      { "word": "moon", "size": "large", "isHabitable": true },
+      { "word": "mars", "size": "large", "isHabitable": true },
+      { "word": "venus", "size": "large", "isHabitable": false },
+      { "word": "jupiter", "size": "huge", "isHabitable": false },
+      { "word": "saturn", "size": "huge", "isHabitable": false },
+      { "word": "mercury", "size": "large", "isHabitable": false },
+      { "word": "neptune", "size": "huge", "isHabitable": false },
+      { "word": "pluto", "size": "medium", "isHabitable": false },
+      { "word": "asteroid", "size": "medium", "isHabitable": false },
+      { "word": "planet", "size": "large", "isHabitable": true },
+      { "word": "galaxy", "size": "huge", "isHabitable": false },
+      { "word": "nebula", "size": "huge", "isHabitable": false },
+      { "word": "station", "size": "large", "isHabitable": true },
+      { "word": "outpost", "size": "medium", "isHabitable": true },
+      { "word": "base", "size": "medium", "isHabitable": true },
+      { "word": "colony", "size": "large", "isHabitable": true },
+      { "word": "ship", "size": "medium", "isHabitable": true },
+      { "word": "shuttle", "size": "medium", "isHabitable": true },
+      { "word": "vessel", "size": "medium", "isHabitable": true },
+      { "word": "orbit", "size": "huge", "isHabitable": false },
+      { "word": "dock", "size": "medium", "isHabitable": true },
+      { "word": "laboratory", "size": "medium", "isHabitable": true },
+      { "word": "crater", "size": "large", "isHabitable": false },
+      { "word": "wormhole", "size": "huge", "isHabitable": false },
+      { "word": "dimension", "size": "huge", "isHabitable": false },
+      { "word": "spaceport", "size": "large", "isHabitable": true },
+      { "word": "observatory", "size": "medium", "isHabitable": true },
+      { "word": "satellite", "size": "medium", "isHabitable": true },
+      { "word": "void", "size": "huge", "isHabitable": false },
+      { "word": "cosmos", "size": "huge", "isHabitable": false },
+      { "word": "quadrant", "size": "huge", "isHabitable": false },
+      { "word": "sector", "size": "huge", "isHabitable": false },
+      { "word": "cluster", "size": "huge", "isHabitable": false },
+      { "word": "comet", "size": "medium", "isHabitable": false },
+      { "word": "meteor", "size": "small", "isHabitable": false },
+      { "word": "starfield", "size": "huge", "isHabitable": false },
+      { "word": "portal", "size": "medium", "isHabitable": false },
+      { "word": "airlock", "size": "small", "isHabitable": true },
+      { "word": "module", "size": "medium", "isHabitable": true },
+      { "word": "hub", "size": "medium", "isHabitable": true }
+    ],
+    "objects": [
+      {
+        "word": "rocket",
+        "canFly": true,
+        "canBeCarried": false,
+        "size": "large"
+      },
+      {
+        "word": "helmet",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "spacesuit",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "flag",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      { "word": "map", "canFly": false, "canBeCarried": true, "size": "small" },
+      {
+        "word": "compass",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "telescope",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "radar",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "signal",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "tiny"
+      },
+      {
+        "word": "antenna",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "beacon",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "probe",
+        "canFly": true,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "rover",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "laser",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "module",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "panel",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "oxygen",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "tank",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "engine",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "thruster",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "console",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "computer",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "tablet",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "device",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "gadget",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "tool",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "camera",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "scanner",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "transmitter",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "receiver",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "crystal",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "mineral",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "sample",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "specimen",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "artifact",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "relic",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "satellite",
+        "canFly": true,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "pod",
+        "canFly": true,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "capsule",
+        "canFly": true,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "drone",
+        "canFly": true,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "jetpack",
+        "canFly": true,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "booster",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "large"
+      },
+      {
+        "word": "shield",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "battery",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      { "word": "cell", "canFly": false, "canBeCarried": true, "size": "tiny" }
+    ],
+    "actions": [
+      {
+        "word": "flies",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "alien",
+          "pilot",
+          "commander",
+          "drone",
+          "captain"
+        ]
+      },
+      {
+        "word": "jumps",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "cadet",
+          "android",
+          "cyborg",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "floats",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "cadet",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "star",
+          "comet",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "hologram",
+          "being"
+        ]
+      },
+      {
+        "word": "lands",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "spaceman",
+          "voyager",
+          "pioneer",
+          "android",
+          "cyborg",
+          "drone",
+          "captain"
+        ]
+      },
+      {
+        "word": "drifts",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "comet",
+          "hologram"
+        ]
+      },
+      {
+        "word": "runs",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "cadet",
+          "android",
+          "cyborg",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "walks",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "cadet",
+          "android",
+          "cyborg",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "explores",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "cadet",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "discovers",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "cadet",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "analyzes",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian"
+        ]
+      },
+      {
+        "word": "observes",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "cadet",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "repairs",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "engineer",
+          "android",
+          "cyborg",
+          "drone",
+          "technician"
+        ]
+      },
+      {
+        "word": "activates",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "controls",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "engineer",
+          "navigator",
+          "android",
+          "cyborg",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "navigates",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "android",
+          "cyborg",
+          "captain",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "monitors",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "scientist",
+          "engineer",
+          "navigator",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian"
+        ]
+      },
+      {
+        "word": "transmits",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "scientist",
+          "engineer",
+          "navigator",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian"
+        ]
+      },
+      {
+        "word": "collects",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "explorer",
+          "scientist",
+          "engineer",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "android",
+          "cyborg",
+          "drone",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "studies",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "voyager",
+          "android",
+          "cyborg",
+          "captain",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian"
+        ]
+      },
+      {
+        "word": "scans",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "android",
+          "cyborg",
+          "drone",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian"
+        ]
+      },
+      {
+        "word": "searches",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "traveler",
+          "voyager",
+          "pioneer",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "colonist",
+          "humanoid",
+          "martian",
+          "lunarian",
+          "being"
+        ]
+      },
+      {
+        "word": "inspects",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "astronaut",
+          "cosmonaut",
+          "robot",
+          "alien",
+          "pilot",
+          "commander",
+          "explorer",
+          "scientist",
+          "engineer",
+          "navigator",
+          "spaceman",
+          "android",
+          "cyborg",
+          "drone",
+          "captain",
+          "sentinel",
+          "guardian",
+          "technician",
+          "humanoid",
+          "martian",
+          "lunarian"
+        ]
+      }
+    ],
+    "colors": [
+      { "word": "red", "brightness": "medium" },
+      { "word": "blue", "brightness": "medium" },
+      { "word": "green", "brightness": "medium" },
+      { "word": "yellow", "brightness": "bright" },
+      { "word": "orange", "brightness": "medium" },
+      { "word": "purple", "brightness": "medium" },
+      { "word": "pink", "brightness": "medium" },
+      { "word": "teal", "brightness": "medium" },
+      { "word": "gold", "brightness": "bright" },
+      { "word": "silver", "brightness": "bright" },
+      { "word": "bronze", "brightness": "medium" },
+      { "word": "copper", "brightness": "medium" },
+      { "word": "white", "brightness": "bright" },
+      { "word": "black", "brightness": "dim" },
+      { "word": "gray", "brightness": "medium" },
+      { "word": "cosmic", "brightness": "medium" },
+      { "word": "stellar", "brightness": "bright" },
+      { "word": "lunar", "brightness": "medium" },
+      { "word": "solar", "brightness": "bright" },
+      { "word": "astral", "brightness": "bright" },
+      { "word": "nebular", "brightness": "bright" },
+      { "word": "galactic", "brightness": "bright" },
+      { "word": "glowing", "brightness": "bright" },
+      { "word": "shining", "brightness": "bright" },
+      { "word": "radiant", "brightness": "bright" },
+      { "word": "gleaming", "brightness": "bright" },
+      { "word": "iridescent", "brightness": "bright" },
+      { "word": "fluorescent", "brightness": "bright" },
+      { "word": "luminous", "brightness": "bright" },
+      { "word": "prismatic", "brightness": "bright" },
+      { "word": "metallic", "brightness": "medium" },
+      { "word": "azure", "brightness": "medium" },
+      { "word": "sapphire", "brightness": "medium" },
+      { "word": "emerald", "brightness": "medium" },
+      { "word": "ruby", "brightness": "medium" },
+      { "word": "amber", "brightness": "medium" },
+      { "word": "ultraviolet", "brightness": "bright" },
+      { "word": "infrared", "brightness": "dim" },
+      { "word": "neon", "brightness": "bright" },
+      { "word": "translucent", "brightness": "medium" }
+    ]
+  }
+}

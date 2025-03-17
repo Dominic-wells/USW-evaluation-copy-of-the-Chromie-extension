@@ -1,0 +1,14 @@
+{
+    "simple": [
+        "{color} {character} with {object}",
+        "{character} finds {object}",
+        "{character} at {place}",
+        "{color} {object} in {place}"
+    ],
+    "advanced": [
+        "{character} {action} with {object} in {place}",
+        "{character} {action} to the {place} with {object}",
+        "{color} {character} {action} through {place}",
+        "{character} uses {object} while {action} near {place}"
+    ]
+}

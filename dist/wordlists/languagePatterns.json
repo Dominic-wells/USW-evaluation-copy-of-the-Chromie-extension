@@ -1,0 +1,58 @@
+{
+  "categories": {
+    "aggressive": {
+      "patterns": [
+        "hate(?:s|d)?",
+        "stupid",
+        "idiot",
+        "shut\\s*up",
+        "dumb",
+        "loser",
+        "you\\s*suck",
+        "(?:go\\s*)?die",
+        "ugly",
+        "(?:i|we)\\s*hate"
+      ],
+      "messages": [
+        "Moo... Those words might hurt someone's feelings. How about using kinder language? 💕",
+        "Let's try to express ourselves without using hurtful words! 🌟",
+        "I think we can find a nicer way to say that! 🦋",
+        "Words can be powerful - let's use them to spread kindness! 🌈"
+      ],
+      "suggestions": [
+        "Maybe try saying how you feel instead",
+        "Could we phrase that more kindly?",
+        "What about using more positive words?"
+      ]
+    },
+    "bullying": {
+      "patterns": [
+        "fat",
+        "loser",
+        "weirdo",
+        "freak",
+        "nobody\\s*likes?\\s*you",
+        "(?:you'?re|you\\s+are|ur)\\s*(?:so|really)?\\s*(?:stupid|dumb|ugly|fat)",
+        "kill\\s*yourself",
+        "(?:go|get)\\s*lost",
+        "(?:no\\s*one|nobody)\\s*(?:likes?|cares?\\s*about)\\s*you"
+      ],
+      "messages": [
+        "Moo! Everyone deserves to be treated with kindness. Let's rethink this message! 🌈",
+        "Those words could really hurt someone. Want to try saying it differently? 🌺",
+        "Being kind makes the internet a better place for everyone! 🌟",
+        "Let's spread positivity instead! How about a friendly message? 🎨"
+      ],
+      "suggestions": [
+        "Let's talk about how we're feeling",
+        "Everyone has value and deserves respect",
+        "What if we shared something positive instead?"
+      ]
+    }
+  },
+  "severity_levels": {
+    "low": ["stupid", "dumb", "ugly"],
+    "medium": ["hate", "loser", "freak"],
+    "high": ["kill", "die", "threat"]
+  }
+}

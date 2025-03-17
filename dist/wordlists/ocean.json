@@ -1,0 +1,877 @@
+{
+  "theme": "ocean",
+  "words": {
+    "characters": [
+      { "word": "sailor", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "diver", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "mermaid", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "pirate", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "captain", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "dolphin", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "whale", "canRun": false, "canHide": false, "size": "huge" },
+      { "word": "shark", "canRun": false, "canHide": true, "size": "large" },
+      { "word": "octopus", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "squid", "canRun": false, "canHide": true, "size": "large" },
+      { "word": "crab", "canRun": true, "canHide": true, "size": "small" },
+      { "word": "turtle", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "seahorse", "canRun": false, "canHide": true, "size": "tiny" },
+      {
+        "word": "stingray",
+        "canRun": false,
+        "canHide": true,
+        "size": "medium"
+      },
+      {
+        "word": "jellyfish",
+        "canRun": false,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "mariner", "canRun": true, "canHide": true, "size": "medium" },
+      { "word": "explorer", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "fisherman",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "surfer", "canRun": true, "canHide": true, "size": "medium" },
+      {
+        "word": "scientist",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      {
+        "word": "navigator",
+        "canRun": true,
+        "canHide": true,
+        "size": "medium"
+      },
+      { "word": "kraken", "canRun": false, "canHide": true, "size": "huge" },
+      { "word": "merman", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "triton", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "siren", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "seal", "canRun": false, "canHide": true, "size": "medium" },
+      { "word": "penguin", "canRun": true, "canHide": true, "size": "small" },
+      { "word": "walrus", "canRun": false, "canHide": true, "size": "large" },
+      { "word": "narwhal", "canRun": false, "canHide": true, "size": "large" },
+      { "word": "otter", "canRun": true, "canHide": true, "size": "small" }
+    ],
+    "places": [
+      { "word": "reef", "size": "large", "isHabitable": true },
+      { "word": "island", "size": "large", "isHabitable": true },
+      { "word": "beach", "size": "large", "isHabitable": true },
+      { "word": "cove", "size": "medium", "isHabitable": true },
+      { "word": "bay", "size": "large", "isHabitable": true },
+      { "word": "lagoon", "size": "medium", "isHabitable": true },
+      { "word": "ocean", "size": "huge", "isHabitable": false },
+      { "word": "sea", "size": "huge", "isHabitable": false },
+      { "word": "shore", "size": "large", "isHabitable": true },
+      { "word": "harbor", "size": "large", "isHabitable": true },
+      { "word": "dock", "size": "medium", "isHabitable": true },
+      { "word": "wharf", "size": "medium", "isHabitable": true },
+      { "word": "pier", "size": "medium", "isHabitable": true },
+      { "word": "marina", "size": "large", "isHabitable": true },
+      { "word": "atoll", "size": "large", "isHabitable": true },
+      { "word": "trench", "size": "huge", "isHabitable": false },
+      { "word": "abyss", "size": "huge", "isHabitable": false },
+      { "word": "shipwreck", "size": "medium", "isHabitable": false },
+      { "word": "cave", "size": "medium", "isHabitable": false },
+      { "word": "grotto", "size": "medium", "isHabitable": false },
+      { "word": "coast", "size": "large", "isHabitable": true },
+      { "word": "sandbar", "size": "medium", "isHabitable": false },
+      { "word": "archipelago", "size": "huge", "isHabitable": true },
+      { "word": "strait", "size": "large", "isHabitable": false },
+      { "word": "fjord", "size": "large", "isHabitable": false },
+      { "word": "delta", "size": "large", "isHabitable": true },
+      { "word": "estuary", "size": "large", "isHabitable": true },
+      { "word": "current", "size": "huge", "isHabitable": false },
+      { "word": "vessel", "size": "medium", "isHabitable": true },
+      { "word": "lighthouse", "size": "medium", "isHabitable": true },
+      { "word": "rig", "size": "large", "isHabitable": true },
+      { "word": "platform", "size": "medium", "isHabitable": true },
+      { "word": "glacier", "size": "huge", "isHabitable": false },
+      { "word": "iceberg", "size": "large", "isHabitable": false },
+      { "word": "volcano", "size": "large", "isHabitable": false }
+    ],
+    "objects": [
+      {
+        "word": "boat",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "ship",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "large"
+      },
+      {
+        "word": "yacht",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "large"
+      },
+      {
+        "word": "submarine",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "large"
+      },
+      {
+        "word": "anchor",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "sail",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "compass",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      { "word": "map", "canFly": false, "canBeCarried": true, "size": "small" },
+      {
+        "word": "net",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "rope",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "harpoon",
+        "canFly": true,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "spear",
+        "canFly": true,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "shell",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "coral",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "pearl",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "bottle",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "treasure",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "chest",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      { "word": "coin", "canFly": false, "canBeCarried": true, "size": "tiny" },
+      {
+        "word": "jewel",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "telescope",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "sextant",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "flag",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "paddle",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "oar",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "helm",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "buoy",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "barrel",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "crate",
+        "canFly": false,
+        "canBeCarried": false,
+        "size": "medium"
+      },
+      {
+        "word": "lantern",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "wetsuit",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "flippers",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "mask",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "snorkel",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "tank",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "regulator",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "small"
+      },
+      {
+        "word": "seaweed",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      },
+      {
+        "word": "algae",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "plankton",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "tiny"
+      },
+      {
+        "word": "driftwood",
+        "canFly": false,
+        "canBeCarried": true,
+        "size": "medium"
+      }
+    ],
+    "actions": [
+      {
+        "word": "swims",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "crab",
+          "turtle",
+          "seahorse",
+          "stingray",
+          "jellyfish",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "kraken",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "dives",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "turtle",
+          "stingray",
+          "mariner",
+          "explorer",
+          "surfer",
+          "scientist",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "floats",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "crab",
+          "turtle",
+          "seahorse",
+          "stingray",
+          "jellyfish",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "kraken",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "sails",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "pirate",
+          "captain",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "navigator"
+        ]
+      },
+      {
+        "word": "rows",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "pirate",
+          "captain",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "navigator"
+        ]
+      },
+      {
+        "word": "navigates",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "navigator"
+        ]
+      },
+      {
+        "word": "explores",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "turtle",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren"
+        ]
+      },
+      {
+        "word": "hunts",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "kraken",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "catches",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "pirate",
+          "captain",
+          "dolphin",
+          "shark",
+          "octopus",
+          "squid",
+          "crab",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "kraken",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "finds",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "crab",
+          "turtle",
+          "seahorse",
+          "stingray",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "discovers",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren"
+        ]
+      },
+      {
+        "word": "studies",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "diver",
+          "captain",
+          "mariner",
+          "explorer",
+          "scientist",
+          "navigator"
+        ]
+      },
+      {
+        "word": "collects",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "crab",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "scientist",
+          "merman",
+          "triton",
+          "siren",
+          "otter"
+        ]
+      },
+      {
+        "word": "observes",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren"
+        ]
+      },
+      {
+        "word": "escapes",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "crab",
+          "turtle",
+          "seahorse",
+          "stingray",
+          "jellyfish",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "resurfaces",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "turtle",
+          "stingray",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      },
+      {
+        "word": "hides",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "shark",
+          "octopus",
+          "squid",
+          "crab",
+          "turtle",
+          "seahorse",
+          "stingray",
+          "jellyfish",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "otter"
+        ]
+      },
+      {
+        "word": "photographs",
+        "requiresMovement": false,
+        "canBePerformedBy": [
+          "diver",
+          "captain",
+          "mariner",
+          "explorer",
+          "surfer",
+          "scientist"
+        ]
+      },
+      {
+        "word": "maps",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "captain",
+          "mariner",
+          "explorer",
+          "scientist",
+          "navigator"
+        ]
+      },
+      {
+        "word": "anchors",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "pirate",
+          "captain",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "navigator"
+        ]
+      },
+      {
+        "word": "drifts",
+        "requiresMovement": true,
+        "canBePerformedBy": [
+          "sailor",
+          "diver",
+          "mermaid",
+          "pirate",
+          "captain",
+          "dolphin",
+          "whale",
+          "shark",
+          "octopus",
+          "squid",
+          "turtle",
+          "seahorse",
+          "stingray",
+          "jellyfish",
+          "mariner",
+          "explorer",
+          "fisherman",
+          "surfer",
+          "scientist",
+          "navigator",
+          "merman",
+          "triton",
+          "siren",
+          "seal",
+          "penguin",
+          "walrus",
+          "narwhal",
+          "otter"
+        ]
+      }
+    ],
+    "colors": [
+      { "word": "blue", "brightness": "medium" },
+      { "word": "aqua", "brightness": "bright" },
+      { "word": "teal", "brightness": "medium" },
+      { "word": "turquoise", "brightness": "bright" },
+      { "word": "cyan", "brightness": "bright" },
+      { "word": "navy", "brightness": "dim" },
+      { "word": "azure", "brightness": "bright" },
+      { "word": "indigo", "brightness": "dim" },
+      { "word": "cerulean", "brightness": "medium" },
+      { "word": "sapphire", "brightness": "bright" },
+      { "word": "cobalt", "brightness": "medium" },
+      { "word": "ultramarine", "brightness": "medium" },
+      { "word": "seafoam", "brightness": "medium" },
+      { "word": "green", "brightness": "medium" },
+      { "word": "coral", "brightness": "bright" },
+      { "word": "reef", "brightness": "medium" },
+      { "word": "pearl", "brightness": "bright" },
+      { "word": "sandy", "brightness": "medium" },
+      { "word": "golden", "brightness": "bright" },
+      { "word": "silver", "brightness": "bright" },
+      { "word": "white", "brightness": "bright" },
+      { "word": "clear", "brightness": "bright" },
+      { "word": "translucent", "brightness": "bright" },
+      { "word": "transparent", "brightness": "bright" },
+      { "word": "misty", "brightness": "medium" },
+      { "word": "foggy", "brightness": "dim" },
+      { "word": "stormy", "brightness": "dim" },
+      { "word": "tempestuous", "brightness": "dim" },
+      { "word": "calm", "brightness": "medium" },
+      { "word": "serene", "brightness": "medium" },
+      { "word": "vibrant", "brightness": "bright" },
+      { "word": "iridescent", "brightness": "bright" },
+      { "word": "glimmering", "brightness": "bright" },
+      { "word": "shimmering", "brightness": "bright" },
+      { "word": "sparkling", "brightness": "bright" },
+      { "word": "glossy", "brightness": "bright" },
+      { "word": "matte", "brightness": "dim" },
+      { "word": "frosted", "brightness": "medium" },
+      { "word": "tropical", "brightness": "bright" },
+      { "word": "oceanic", "brightness": "medium" }
+    ]
+  }
+}

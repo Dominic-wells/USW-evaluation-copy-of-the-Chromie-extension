@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Chromie Settings</title>
+  </head>
+  <body>
+    <div class="popup" role="dialog" aria-labelledby="popupTitle">
+      <header class="popup-header">
+        <h1 id="popupTitle" class="popup-title">Chromie Settings</h1>
+
+        <!-- Search Settings -->
+        <div class="settings-search" role="search">
+          <input
+            type="text"
+            id="settingsSearch"
+            placeholder="Search settings..."
+            aria-label="Search settings"
+          />
+        </div>
+      </header>
+
+      <!-- Main Action Buttons -->
+      <div class="main-buttons" role="toolbar" aria-label="Main actions">
+        <button
+          id="nudge-spacecow"
+          class="main-button"
+          aria-label="Toggle spacecow visibility"
+        >
+          Hide Spacecow
+        </button>
+        <button
+          id="curiosity-tab"
+          class="main-button"
+          aria-label="Make spacecow analyze current page"
+        >
+          Make Spacecow Curious
+        </button>
+        <button
+          id="showStats"
+          class="main-button"
+          aria-label="Display writing statistics"
+        >
+          Show Writing Stats
+        </button>
+      </div>
+
+      <!-- Settings Navigation -->
+      <nav
+        class="settings-tabs"
+        role="tablist"
+        aria-label="Settings categories"
+      >
+        <button
+          role="tab"
+          aria-selected="true"
+          aria-controls="writing-panel"
+          id="writing-tab"
+          class="tab-button active"
+        >
+          Writing
+        </button>
+        <button
+          role="tab"
+          aria-selected="false"
+          aria-controls="password-panel"
+          id="password-tab"
+          class="tab-button"
+        >
+          Passwords
+        </button>
+        <button
+          role="tab"
+          aria-selected="false"
+          aria-controls="display-panel"
+          id="display-tab"
+          class="tab-button"
+        >
+          Display
+        </button>
+      </nav>
+
+      <!-- Settings Panels -->
+      <div class="settings-panels">
+        <!-- Writing Settings Panel -->
+        <section
+          id="writing-panel"
+          role="tabpanel"
+          aria-labelledby="writing-tab"
+          class="settings-panel active"
+        >
+          <div class="settings-group">
+            <h2>Writing Monitor Settings</h2>
+            <details open>
+              <summary>Break Reminders</summary>
+              <div class="setting">
+                <label for="wordCountThreshold">
+                  Word Count Alert Threshold
+                  <span class="help-text"
+                    >How many words before showing a break reminder</span
+                  >
+                </label>
+                <input
+                  type="number"
+                  id="wordCountThreshold"
+                  min="10"
+                  max="1000"
+                  value="50"
+                  aria-describedby="wordCountHelp"
+                />
+                <small id="wordCountHelp"
+                  >Enter a value between 10 and 1000 words</small
+                >
+              </div>
+
+              <div class="setting">
+                <label for="typingBreakDuration">
+                  Break Duration
+                  <span class="help-text"
+                    >Length of suggested breaks in minutes</span
+                  >
+                </label>
+                <input
+                  type="number"
+                  id="typingBreakDuration"
+                  min="1"
+                  max="60"
+                  value="5"
+                  aria-describedby="breakDurationHelp"
+                />
+                <small id="breakDurationHelp"
+                  >Enter a value between 1 and 60 minutes</small
+                >
+              </div>
+            </details>
+
+            <details open>
+              <summary>Notifications</summary>
+              <div class="setting">
+                <label for="enableTypingAlerts" class="checkbox-label">
+                  Enable Writing Alerts
+                  <span class="help-text"
+                    >Show notifications about writing progress</span
+                  >
+                </label>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="enableTypingAlerts"
+                    checked
+                    aria-describedby="alertsHelp"
+                  />
+                </div>
+                <small id="alertsHelp"
+                  >Receive notifications about your writing progress</small
+                >
+              </div>
+
+              <div class="setting">
+                <label for="pauseMonitoring" class="checkbox-label">
+                  Pause Monitoring
+                  <span class="help-text"
+                    >Temporarily stop writing monitoring</span
+                  >
+                </label>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="pauseMonitoring"
+                    aria-describedby="pauseHelp"
+                  />
+                </div>
+                <small id="pauseHelp"
+                  >Temporarily disable writing monitoring and alerts</small
+                >
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <!-- Password Settings Panel -->
+        <section
+          id="password-panel"
+          role="tabpanel"
+          aria-labelledby="password-tab"
+          class="settings-panel"
+          hidden
+        >
+          <div class="settings-group">
+            <h2>Password Generator Settings</h2>
+            <details open>
+              <summary>Password Type</summary>
+              <div class="setting">
+                <label for="passwordType">
+                  Generation Method
+                  <span class="help-text"
+                    >Choose how passwords are generated</span
+                  >
+                </label>
+                <select id="passwordType" aria-describedby="passwordTypeHelp">
+                  <option value="story">Story Password</option>
+                  <option value="standard">Standard Password</option>
+                </select>
+                <small id="passwordTypeHelp"
+                  >Story passwords are memorable, standard are more
+                  complex</small
+                >
+              </div>
+            </details>
+
+            <div id="storySettings">
+              <details open>
+                <summary>Story Settings</summary>
+                <div class="setting">
+                  <label for="storyTheme">
+                    Theme
+                    <span class="help-text">Choose the story theme</span>
+                  </label>
+                  <select id="storyTheme" aria-describedby="themeHelp">
+                    <option value="space">Space Adventure</option>
+                    <option value="magic">Magical World</option>
+                    <option value="ocean">Ocean Adventure</option>
+                    <option value="dinosaur">Dinosaur World</option>
+                  </select>
+                  <small id="themeHelp"
+                    >The theme affects the words used in the story</small
+                  >
+                </div>
+
+                <div class="setting">
+                  <label for="storyComplexity">
+                    Story Type
+                    <span class="help-text">Choose story complexity</span>
+                  </label>
+                  <select
+                    id="storyComplexity"
+                    aria-describedby="complexityHelp"
+                  >
+                    <option value="simple">Simple Story</option>
+                    <option value="advanced">Advanced Story</option>
+                  </select>
+                  <small id="complexityHelp"
+                    >Advanced stories use more complex sentence
+                    structures</small
+                  >
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- Display Settings Panel -->
+        <section
+          id="display-panel"
+          role="tabpanel"
+          aria-labelledby="display-tab"
+          class="settings-panel"
+          hidden
+        >
+          <div class="settings-group">
+            <h2>Display Settings</h2>
+            <details open>
+              <summary>Text Settings</summary>
+              <div class="setting">
+                <label for="fontSize">
+                  Font Size
+                  <span class="help-text">Adjust text size in pixels</span>
+                </label>
+                <input
+                  type="number"
+                  id="fontSize"
+                  min="8"
+                  max="24"
+                  value="14"
+                  aria-describedby="fontSizeHelp"
+                />
+                <small id="fontSizeHelp"
+                  >Enter a value between 8 and 24 pixels</small
+                >
+              </div>
+
+              <div class="setting">
+                <label for="fontFamily">
+                  Font Family
+                  <span class="help-text">Choose text font</span>
+                </label>
+                <select id="fontFamily" aria-describedby="fontFamilyHelp">
+                  <option value="Arial, sans-serif">Arial</option>
+                  <option value="Times New Roman, serif">
+                    Times New Roman
+                  </option>
+                  <option value="Courier New, monospace">Courier New</option>
+                  <option value="OpenDyslexic">OpenDyslexic</option>
+                </select>
+                <small id="fontFamilyHelp"
+                  >Select a font that's easy for you to read</small
+                >
+              </div>
+            </details>
+
+            <details open>
+              <summary>Display Settings</summary>
+              <div class="setting">
+                <label for="highContrast" class="checkbox-label">
+                  High Contrast Mode
+                  <span class="help-text">Enhance visual contrast</span>
+                </label>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="highContrast"
+                    aria-describedby="contrastHelp"
+                  />
+                </div>
+                <small id="contrastHelp"
+                  >Makes text and backgrounds more distinct</small
+                >
+              </div>
+
+              <div class="setting">
+                <label for="lineSpacing">
+                  Line Spacing
+                  <span class="help-text">Adjust space between lines</span>
+                </label>
+                <select id="lineSpacing" aria-describedby="spacingHelp">
+                  <option value="normal">Normal</option>
+                  <option value="1.5">1.5</option>
+                  <option value="2">Double</option>
+                </select>
+                <small id="spacingHelp"
+                  >More space can make text easier to read</small
+                >
+              </div>
+
+              <div class="setting">
+                <label for="textColour">
+                  Text Color
+                  <span class="help-text">Choose text color</span>
+                </label>
+                <input
+                  type="color"
+                  id="textColour"
+                  value="#333333"
+                  aria-describedby="textColorHelp"
+                />
+                <small id="textColorHelp"
+                  >Select your preferred text color</small
+                >
+              </div>
+
+              <div class="setting">
+                <label for="backgroundColour">
+                  Background Color
+                  <span class="help-text">Choose background color</span>
+                </label>
+                <input
+                  type="color"
+                  id="backgroundColour"
+                  value="#FFFFFF"
+                  aria-describedby="bgColorHelp"
+                />
+                <small id="bgColorHelp"
+                  >Select your preferred background color</small
+                >
+              </div>
+            </details>
+          </div>
+        </section>
+      </div>
+
+      <!-- Settings Actions -->
+      <div class="settings-actions" role="group" aria-label="Settings actions">
+        <button
+          id="saveSettings"
+          class="primary-button"
+          aria-label="Save all settings"
+        >
+          Save Settings
+        </button>
+        <button
+          id="defaultSettings"
+          class="secondary-button"
+          aria-label="Reset to default settings"
+        >
+          Reset to Defaults
+        </button>
+      </div>
+
+      <!-- Status Messages -->
+      <div
+        id="statusMessages"
+        class="status-container"
+        role="status"
+        aria-live="polite"
+      ></div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
